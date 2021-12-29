@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>CrazyGitHubLinks</title>
+</head>
+<body>
+    <header>
+         <div class="nav_logo">
+                <img src="./Icons/github.svg" alt="github" width="50px"><h1 class="logo-text">GitHub<span class="logo-links">Links</span></h1>
+         </div>   
+         <div class="logos">
+            <span style="font-size: 2em; color: black;">
+                <i class="fab fa-github"></i>
+              </span>
+              <span style="font-size: 2em; color: #FC6D27;">
+                <i class="fab fa-gitlab"></i>
+              </span>
+              <span style="font-size: 2em; color: #4267B2;">
+                <i class="fab fa-facebook-square"></i>
+              </span>
+              <span style="font-size: 2em; color: #1da1f2;">
+                <i class="fab fa-twitter"></i>
+              </span>
+              <span style="font-size: 2em; color: #c4302b;">
+                <i class="fab fa-youtube"></i>
+              </span>
+              <span style="font-size: 2em; color:  #833AB4;">
+                <i class="fab fa-instagram"></i>
+              </span>         
+        </div>  
+    </header>
+    <main>
+        <div class="inputs">
+            <form id="input-form">
+            <h4 class="inputs-header">Create custom link</h4>
+            <input type="text" id="uname" name="uname" value="" placeholder=":UserName">
+            <br><br>
+            <input type="text" id="repname" name="repname" value="" placeholder=":RepoName">
+
+                <div class="complex-inputs">
+                  <label for="icons">Chose Icon:</label>
+                <select name="icons" id="icons" onchange="pickIcon()">
+                  <option value="GitHub">GitHub</option>
+                  <option value="Gitlab">Gitlab</option>
+                  <option value="Facebook">Facebook</option>
+                  <option value="Twitter">Twitter</option>
+                  <option value="Youtube">Youtube</option>
+                  <option value="Instagram">Instagram</option>
+                </select>
+                </div>
+
+            <div>
+                <label for="favcolor">Select your favorite color:</label>
+                <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+            </div>
+            </form>  
+            <input type="submit" value="Submit" id="submit" class="sbtn">
+            <div class="wrapper" id="card">
+                <!--Creating card using JS-->
+            </div>    
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+
+.nav_logo {
+    display: flex;
+    align-items: center;
+    font-size: 1em; 
+}
+.logos {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+.logo-links {
+    color: skyblue;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid grey;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.inputs-header {
+    font-size: 2em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+input[type=text] {
+    height: 3em;
+    width: 100%;
+}
+
+label.user-input {
+    color:deepskyblue;
+    font-size: 1.3em;
+    font-weight: 600
+}
+select {
+    font-family: "FontAwesome", sans-serif;
+    font-size: 14px;
+}
+
+#icons::before {
+    vertical-align: middle;
+}
+
+.complex-inputs {
+    margin-top: 16px;
+}
+.sbtn {
+     background:#0066A2;
+     color:white;
+     border-style:outset;
+     border-color:#0066A2;
+     height:50px;
+     width:100px;
+     font: bold,15px arial,sans-serif;
+     text-shadow:none;
+     cursor: pointer;
+     margin: 2em;
+}
+.hide {
+    display: none;
+}
+
+.wrapper {
+    display: flex;
+    margin: 2em;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: greenyellow;
+    border: 1px solid grey;
+}
+.Author-name,.repo-name {
+    color: skyblue;
+    text-decoration: underline;
+}
+@media (max-width:768px) {
+    .inputs {
+        width: 70%;
+    }
+}
+@media (max-width:490px) {
+    .inputs {
+        width: 95%;
+    }
+}
